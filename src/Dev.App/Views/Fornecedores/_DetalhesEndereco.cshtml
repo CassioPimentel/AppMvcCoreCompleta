@@ -59,7 +59,7 @@
                         @Model.Endereco.Estado
                     </td>
                     <td>
-                        <a class="btn btn-info">
+                        <a asp-action="AtualizarEndereco" asp-route-id="@Model.Id" class="btn btn-info" data-modal="">
                             <span title="Editar" class="fa fa-pencil-alt"></span>
                         </a>
                     </td>
@@ -68,3 +68,7 @@
         </table>
     }
 </div>
+
+<script>
+     AjaxModal();
+</script>
